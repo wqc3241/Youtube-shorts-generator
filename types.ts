@@ -14,6 +14,7 @@ export interface ShortsCandidate {
   endTime: number;
   duration: number;
   description: string;
+  selectionReason: string;
   confidence: number;
   status: 'pending' | 'selected' | 'discarded';
   scheduledTime?: string;
@@ -23,5 +24,6 @@ export enum AppState {
   IDLE = 'IDLE',
   UPLOADING = 'UPLOADING',
   ANALYZING = 'ANALYZING',
-  REVIEWING = 'REVIEWING'
+  REVIEWING = 'REVIEWING',
+  ERROR = 'ERROR'
 }
